@@ -71,7 +71,7 @@ def send_discord_dm(new_jobs, csv_filename):
         # 2. Build out all message lines
         all_lines = [
             f"🚀 **JobPulse Report**", 
-            f"Identified **{new_jobs_count}** new matching jobs today!\n"
+            f"Identified **{new_jobs_count}** new matching jobs!\n"
         ]
         
         for job in new_jobs:
