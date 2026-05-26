@@ -25,7 +25,7 @@ def save_csv_report(new_jobs):
         return None
         
     date_str = datetime.now().strftime("%Y-%m-%d, %H:%M")
-    filename = f"report_{date_str}.csv"
+    filename = f"job_reports/report_{date_str}.csv"
     
     # Sort by State, then City, then Company for location grouping
     sorted_jobs = sorted(new_jobs, key=lambda x: (x.get('state', ''), x.get('city', ''), x.get('company', '')))
