@@ -4,7 +4,7 @@ import sys
 
 # Add jobpulse to path to easily import config if needed, or just define DB_PATH
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'jobpulse')))
-from config import DB_PATH
+from jobpulse.config import DB_PATH
 
 def remove_random_job():
     db_path = os.path.join(os.path.dirname(__file__), '..', DB_PATH)

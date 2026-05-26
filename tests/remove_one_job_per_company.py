@@ -4,7 +4,7 @@ import sys
 
 # Add jobpulse to path to easily import config
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'jobpulse')))
-from config import DB_PATH
+from jobpulse.config import DB_PATH
 
 def remove_one_job_per_company():
     # Because tests are run from a different directory, make sure DB_PATH is absolute or relative to root
