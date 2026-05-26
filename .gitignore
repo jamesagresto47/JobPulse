@@ -13,3 +13,7 @@ report*
 jobpulse_errors.log
 
 *__pycache__*
+
+deploy.sh
+
+companies.csv
