@@ -1,0 +1,15 @@
+.venv/
+.venv/*
+
+ERDS/
+ERDS/*
+
+.env
+
+job_tracker_state.db
+
+report*
+
+jobpulse_errors.log
+
+*__pycache__*
