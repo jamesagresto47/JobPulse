@@ -9,6 +9,8 @@ ERDS/*
 job_tracker_state.db
 
 report*
+job_reports/
+job_reports/*
 
 jobpulse_errors.log
 
