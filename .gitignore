@@ -6,7 +6,7 @@ ERDS/*
 
 .env
 
-job_tracker_state.db
+*job_tracker_state*
 
 report*
 job_reports/

@@ -3,8 +3,14 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+# 1. Get the directory path from the environment, defaulting to the current directory locally
+DB_DIR = os.getenv("DB_DIR", ".")
+
+# 2. CRITICAL: Ensure DB_PATH points to the FILE inside that directory, not just the directory itself
+DB_PATH = os.path.join(DB_DIR, "job_tracker_state.json")
+
 TARGET_CSV_PATH = os.environ.get("TARGET_CSV_PATH", "companies.csv")
-DB_PATH = os.environ.get("DB_PATH", "job_tracker_state.db")
+DB_PATH = os.environ.get("DB_PATH", "job_tracker_state.json")
 
 INCLUSION_KEYWORDS = ['python', 'software', 'developer', 'engineer', 'analyst', 'data', 'rust', 'backend', 'machine learning', 'ml']
 EXCLUSION_KEYWORDS = ['senior', 'lead', 'principal', 'manager', 'director', 'intern', 'co-op', 'sr.', 'vp']

@@ -1,0 +1,21 @@
+/home/jimbo/Code/JobScraper/
+├── .dockerignore
+├── .gitignore
+├── Dockerfile
+├── README.md
+├── requirements.txt
+├── jobpulse/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── database.py
+│   ├── filter.py
+│   ├── main.py
+│   ├── notifier.py
+│   └── scraper.py
+└── tests/
+    ├── __init__.py
+    ├── clear_all_jobs.py
+    ├── remove_one_job_per_company.py
+    ├── remove_random_job.py
+    ├── test_discord_message.py
+    └── test_jobpulse.py

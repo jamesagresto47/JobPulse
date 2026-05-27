@@ -13,6 +13,12 @@ COPY requirements.txt .
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Create a directory for persistent data
+RUN mkdir -p /data
+
+# Set the environment variable so your Python code knows where to look
+ENV DB_DIR=/data
+
 # Copy the application code
 COPY . .
 

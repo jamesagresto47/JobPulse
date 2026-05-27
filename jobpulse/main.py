@@ -1,3 +1,5 @@
+import time
+
 import pandas as pd
 import os
 import sys
@@ -73,3 +75,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    time.sleep(5)
